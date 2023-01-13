@@ -8,14 +8,31 @@
   margin: 8px 0 0 0;
 }
 .CardFirst {
-  background-color: peachpuff;
+  background-color: lightsteelblue;
 }
 .CardLast {
-  background-color: lavender;
+  background-color: powderblue;
 }
 .CardLarge {
   padding: 16px;
 }
 .CardLarge .CardTitle {
   font-size: 36px;
+}
+
+/*
+Style queries could be used to respond to changes in parent components/modules
+without breaking encapsulation, sort of like an event emitter.
+See: https://www.miriamsuzanne.com/2022/09/14/cq-browsers/
+See: https://codepen.io/miriamsuzanne/pen/abGBNNx
+See: https://css.oddbird.net/rwd/query/style-cases/
+See: https://blog.logrocket.com/new-css-style-queries/
+*/
+@container style(--theme: warm) {
+  .CardFirst {
+    background-color: peachpuff;
+  }
+  .CardLast {
+    background-color: pink;
+  }
 }

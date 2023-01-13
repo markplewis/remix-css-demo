@@ -2,7 +2,7 @@ import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@re
 
 export const meta = () => ({
   charset: "utf-8",
-  title: "Demo",
+  title: "CSS demo",
   viewport: "width=device-width,initial-scale=1"
 });
 

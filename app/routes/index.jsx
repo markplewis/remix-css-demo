@@ -8,7 +8,7 @@ export function links() {
   return [{ rel: "stylesheet", href: styles }, ...LayoutLinks()];
 }
 
-// This isn't necessary for this demo but here's how server-side data fetching works.
+// This isn't necessary for this demo but here's how server-side data fetching works in Remix.
 // See: https://remix.run/docs/en/v1/guides/data-loading
 export const loader = async () => {
   return json([
@@ -24,7 +24,7 @@ export default function Index() {
   const items = useLoaderData();
   return (
     <div>
-      <h1>Demo</h1>
+      <h1>CSS demo</h1>
       <Layout items={items} />
     </div>
   );
