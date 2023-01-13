@@ -18,7 +18,11 @@
     "@remix-run/dev": "^1.10.0",
     "@remix-run/eslint-config": "^1.10.0",
     "@remix-run/serve": "^1.10.0",
-    "eslint": "^8.27.0"
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.27.4",
+    "prettier": "^2.8.2"
   },
   "engines": {
     "node": ">=14"

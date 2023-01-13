@@ -2,10 +2,7 @@ import styles from "./Layout.css";
 import { Card, links as CardLinks } from "./Card";
 
 export function links() {
-  return [
-    ...CardLinks(),
-    { rel: "stylesheet", href: styles }
-  ];
+  return [...CardLinks(), { rel: "stylesheet", href: styles }];
 }
 
 export function Layout({ items }) {

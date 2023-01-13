@@ -7,17 +7,17 @@ export function links() {
 }
 
 export function Card({ item, index, isLast }) {
-  // const isMedium = useMedia("(min-width: 400px)", false);
-  const isWide = useMedia("(min-width: 600px)", false);
+  const isMedium = useMedia("(min-width: 600px)", false);
+  // const isWide = useMedia("(min-width: 800px)", false);
 
   const isFirst = index === 0;
   const classes = [
     "Card",
-    isWide && isFirst ? "CardLarge" : null,
+    isMedium && isFirst ? "CardLarge" : null,
     isFirst ? "CardFirst" : null,
     isLast ? "CardLast" : null
   ]
-    .filter((c) => c)
+    .filter(c => c)
     .join(" ");
 
   return (

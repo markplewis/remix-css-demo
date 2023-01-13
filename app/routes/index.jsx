@@ -4,10 +4,7 @@ import { Layout, links as LayoutLinks } from "~/components/Layout";
 // See: https://remix.run/docs/en/v1/guides/styling
 
 export function links() {
-  return [
-    ...LayoutLinks(),
-    { rel: "stylesheet", href: styles }
-  ];
+  return [...LayoutLinks(), { rel: "stylesheet", href: styles }];
 }
 
 const items = [
