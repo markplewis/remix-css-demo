@@ -1,0 +1,21 @@
+.Card {
+  padding: 16px;
+}
+.CardTitle {
+  margin: 0 0 8px 0;
+}
+.CardBody {
+  margin: 8px 0 0 0;
+}
+.CardFirst {
+  background-color: peachpuff;
+}
+.CardLast {
+  background-color: lavender;
+}
+.CardLarge {
+  padding: 16px;
+}
+.CardLarge .CardTitle {
+  font-size: 36px;
+}
