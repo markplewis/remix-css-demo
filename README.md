@@ -6,7 +6,7 @@ This demo was built using Remix because it offers server-side rendering out-of-t
 
 The purpose of this repo is twofold:
 
-- To demonstrate some of the pitfalls of "CSS-in-JS", specifically
+- To demonstrate some of the pitfalls of runtime CSS-in-JS, specifically
   `window.matchMedia` media queries.
 - To introduce CSS Style Queries and demonstrate how they may be useful.
 
@@ -23,7 +23,9 @@ In Google Chrome, you'll need to:
 2. Set it to Enabled.
 3. Restart the browser.
 
-## Discussion topics
+## Discussion points
+
+See the following notes for demo-specific information. See `DISCUSSION.md` for more in-depth thoughts.
 
 ### CSS-in-JS
 
