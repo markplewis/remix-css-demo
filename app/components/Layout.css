@@ -1,4 +1,5 @@
 html {
+  /* Global flag that various CSS modules can respond to when its value changes (see below) */
   --theme: cool;
 }
 .Layout {
@@ -13,6 +14,10 @@ html {
 
 @media (min-width: 800px) {
   html {
+    /* All CSS modules that are "subscribed" to this "event" via `@container style(--theme: warm)`
+    can respond to this new value accordingly, without needing to know anything about their parent
+    modules. Similarly, this module doesn't need to "reach down into" its child modules and
+    override their styles. */
     --theme: warm;
   }
   .Layout {

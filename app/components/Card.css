@@ -7,12 +7,14 @@
 .CardBody {
   margin: 8px 0 0 0;
 }
+/* These styles will take effect immediately because this info is available server side */
 .CardFirst {
   background-color: lightsteelblue;
 }
 .CardLast {
   background-color: powderblue;
 }
+/* These styles won't kick in until JS has initialized, which will be visually apparent */
 .CardLarge {
   padding: 16px;
 }
@@ -22,11 +24,11 @@
 
 /*
 Style queries could be used to respond to changes in parent components/modules
-without breaking encapsulation, sort of like an event emitter.
-See: https://www.miriamsuzanne.com/2022/09/14/cq-browsers/
-See: https://codepen.io/miriamsuzanne/pen/abGBNNx
-See: https://css.oddbird.net/rwd/query/style-cases/
-See: https://blog.logrocket.com/new-css-style-queries/
+without breaking encapsulation, sort of like an event emitter. See:
+- https://www.miriamsuzanne.com/2022/09/14/cq-browsers/
+- https://codepen.io/miriamsuzanne/pen/abGBNNx
+- https://css.oddbird.net/rwd/query/style-cases/
+- https://blog.logrocket.com/new-css-style-queries/
 */
 @container style(--theme: warm) {
   .CardFirst {

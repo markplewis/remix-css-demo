@@ -3,12 +3,13 @@ import { useLoaderData } from "@remix-run/react";
 import { Layout, links as LayoutLinks } from "~/components/Layout";
 import styles from "~/styles/global.css";
 
-// See: https://remix.run/docs/en/v1/guides/styling
+// Remix aggregates CSS from child components so that all of the relevant styles will be included
+// on the page. See: https://remix.run/docs/en/v1/guides/styling
 export function links() {
   return [{ rel: "stylesheet", href: styles }, ...LayoutLinks()];
 }
 
-// This isn't necessary for this demo but here's how server-side data fetching works in Remix.
+// Here's how server-side data fetching works in Remix (not necessary for the demo but interesting).
 // See: https://remix.run/docs/en/v1/guides/data-loading
 export const loader = async () => {
   return json([
