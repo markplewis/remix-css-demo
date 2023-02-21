@@ -27,18 +27,6 @@ In Google Chrome, you'll need to:
 
 See the following notes for demo-specific information. See `DISCUSSION.md` for more in-depth thoughts.
 
-### CSS-in-JS
-
-When your browser's viewport is greater than 600px wide and you refresh the page, you'll notice that
-the first card's heading is smaller at first, then suddenly becomes larger (which sometimes causes
-CLS). This happens because `window.matchMedia` is dictating whether the card should appear in its
-"large" display style instead of its default display.
-
-### Modular CSS
-
-My notes in `Layout.css` and `Card.css` explain how CSS Style Queries can someday be used to make
-our CSS more modular/encapsulated.
-
 ## VSCode plugins
 
 You may want to install the following VSCode plugins:
